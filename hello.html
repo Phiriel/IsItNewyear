@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>IsItNewyear</title>
+        <title>Isitnewyear</title>
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        Hello World!!!
+        {%if newyear%}
+            <h1>Happy New Year</h1>
+        {%else%}
+            <h1>No</h1>
+        {%endif%}
+
+        <a href="{{ url_for('index')}}">Home</a>
     </body>
 </html>
